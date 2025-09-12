@@ -1,0 +1,43 @@
+{
+  "name": "@nicksp/prettier-config",
+  "version": "1.0.0",
+  "description": "Prettier config for @nicksp",
+  "type": "module",
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "author": {
+    "name": "Nick Plekhanov",
+    "url": "https://plekhanov.me/"
+  },
+  "files": [
+    "index.d.ts",
+    "index.js"
+  ],
+  "types": "index.d.ts",
+  "license": "MIT",
+  "funding": "https://buymeacoffee.com/plekhanov",
+  "homepage": "https://github.com/nicksp/prettier-config#readme",
+  "bugs": {
+    "url": "https://github.com/nicksp/prettier-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicksp/prettier-config.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,ts,md}\"",
+    "test": "prettier --check examples/",
+    "release": "bumpp"
+  },
+  "devDependencies": {
+    "bumpp": "10.2.3",
+    "prettier": "^3.6.2"
+  },
+  "peerDependencies": {
+    "prettier": "^3.6.2"
+  },
+  "prettier": "./index.js"
+}
