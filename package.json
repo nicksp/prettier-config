@@ -2,6 +2,7 @@
   "name": "@nicksp/prettier-config",
   "version": "1.0.1",
   "description": "Prettier config for @nicksp",
+  "packageManager": "pnpm@10.20.0",
   "type": "module",
   "keywords": [
     "prettier",
