@@ -7,7 +7,7 @@ on:
 
 jobs:
   release:
-    uses: nicksp/workflows/.github/workflows/release-changelogithub.yml@f151adfeb69b6ca51b9d8eba0545b31e6322bb06 # v1
+    uses: nicksp/workflows/.github/workflows/release-changelogithub.yml@b6dd4a3dc0859745d07187c763e71fedcbb12725 # v1
     with:
       publish: true
     permissions:
