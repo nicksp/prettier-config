@@ -40,6 +40,9 @@
   "peerDependencies": {
     "prettier": "^3.6.2"
   },
+  "dependencies": {
+    "@prettier/plugin-oxc": "^0.0.4"
+  },
   "devDependencies": {
     "@nicksp/eslint-config": "^1.5.1",
     "@nicksp/prettier-config": "workspace:*",
