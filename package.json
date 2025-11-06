@@ -1,43 +1,50 @@
 {
   "name": "@nicksp/prettier-config",
-  "version": "1.0.2",
   "description": "Prettier config for @nicksp",
-  "packageManager": "pnpm@10.20.0",
+  "version": "1.0.2",
   "type": "module",
-  "keywords": [
-    "prettier",
-    "prettier-config"
-  ],
+  "packageManager": "pnpm@10.20.0",
   "author": {
     "name": "Nick Plekhanov",
     "url": "https://plekhanov.me/"
   },
-  "files": [
-    "index.d.ts",
-    "index.js"
-  ],
-  "types": "index.d.ts",
   "license": "MIT",
   "funding": "https://buymeacoffee.com/plekhanov",
   "homepage": "https://github.com/nicksp/prettier-config#readme",
-  "bugs": {
-    "url": "https://github.com/nicksp/prettier-config/issues"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nicksp/prettier-config.git"
   },
-  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/nicksp/prettier-config/issues"
+  },
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "types": "index.d.ts",
+  "files": [
+    "index.d.ts",
+    "index.js"
+  ],
   "scripts": {
+    "lint": "eslint --cache",
     "format": "prettier --write \"**/*.{js,ts,md}\"",
     "test": "prettier --check examples/",
     "release": "bumpp"
   },
-  "devDependencies": {
-    "bumpp": "10.3.1",
+  "peerDependencies": {
     "prettier": "^3.6.2"
   },
-  "peerDependencies": {
+  "devDependencies": {
+    "@nicksp/eslint-config": "^1.5.1",
+    "@nicksp/prettier-config": "workspace:*",
+    "bumpp": "^10.3.1",
+    "eslint": "^9.39.1",
     "prettier": "^3.6.2"
   },
   "prettier": "./index.js"

@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable unused-imports/no-unused-vars */
 interface User {
   id: number
   name: string
@@ -31,7 +33,9 @@ class UserService {
   // Multiple parameters should keep parentheses
   updateUser(id: number, updates: Partial<User>): boolean {
     const userIndex = this.users.findIndex(user => user.id === id)
-    if (userIndex === -1) return false
+    if (userIndex === -1) {
+      return false
+    }
 
     this.users[userIndex] = { ...this.users[userIndex], ...updates }
     return true
@@ -41,15 +45,16 @@ class UserService {
 // Arrow functions with single parameter (test arrowParens: "avoid")
 const formatUserName = (user: User) => `${user.name} <${user.email}>`
 const isActiveUser = (user: User) => user.active
-const getUserId = (user: User) => user.id
 
 // Arrow functions with multiple parameters (should keep parens)
-const createUser = (name: string, email: string): User => ({
-  id: Math.random(),
-  name,
-  email,
-  active: true,
-})
+function createUser(name: string, email: string): User {
+  return {
+    id: Math.random(),
+    name,
+    email,
+    active: true,
+  }
+}
 
 // String literals and template strings (test singleQuote: true)
 const messages = {
@@ -78,4 +83,4 @@ const service = new UserService()
 const newUser = createUser('John Doe', 'john@example.com')
 service.addUser(newUser)
 
-export { UserService, formatUserName, createUser }
+export { createUser, formatUserName, UserService }
