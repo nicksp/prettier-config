@@ -34,7 +34,7 @@
   "scripts": {
     "lint": "eslint --cache",
     "format": "prettier --write \"**/*.{js,ts,md}\"",
-    "test": "prettier --check examples/",
+    "test": "npx publint && prettier --check examples/",
     "release": "bumpp"
   },
   "peerDependencies": {
