@@ -13,7 +13,7 @@ importers:
         version: 0.0.4
     devDependencies:
       '@nicksp/eslint-config':
-        specifier: ^1.5.2
+        specifier: ^1.5.3
         version: 1.5.3(@nicksp/prettier-config@)(@typescript-eslint/eslint-plugin@8.46.3(@typescript-eslint/parser@8.46.3(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/parser@8.46.3(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       '@nicksp/prettier-config':
         specifier: workspace:*
