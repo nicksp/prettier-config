@@ -41,7 +41,7 @@
     "prettier": "^3.6.2"
   },
   "dependencies": {
-    "@prettier/plugin-oxc": "^0.0.4"
+    "@prettier/plugin-oxc": "^0.0.5"
   },
   "devDependencies": {
     "@nicksp/eslint-config": "^1.5.3",
