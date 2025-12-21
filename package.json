@@ -3,7 +3,7 @@
   "description": "Prettier config for @nicksp",
   "version": "1.1.0",
   "type": "module",
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.25.0",
   "author": {
     "name": "Nick Plekhanov",
     "url": "https://plekhanov.me/"
@@ -47,7 +47,7 @@
     "@nicksp/eslint-config": "^1.5.4",
     "@nicksp/prettier-config": "workspace:*",
     "bumpp": "^10.3.2",
-    "eslint": "^9.39.1",
+    "eslint": "^9.39.2",
     "prettier": "^3.7.4"
   },
   "prettier": "./index.js"
