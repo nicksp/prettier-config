@@ -35,6 +35,7 @@
     "lint": "eslint --cache",
     "format": "prettier --write \"**/*.{js,ts,md}\"",
     "test": "npx publint && prettier --check examples/",
+    "typecheck": "tsgo",
     "release": "bumpp"
   },
   "peerDependencies": {
@@ -46,6 +47,8 @@
   "devDependencies": {
     "@nicksp/eslint-config": "^1.5.4",
     "@nicksp/prettier-config": "workspace:*",
+    "@types/node": "^25.0.3",
+    "@typescript/native-preview": "7.0.0-dev.20251221.1",
     "bumpp": "^10.3.2",
     "eslint": "^9.39.2",
     "prettier": "^3.7.4"
