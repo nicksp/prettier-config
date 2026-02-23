@@ -3,7 +3,7 @@
   "description": "Prettier config for @nicksp",
   "version": "1.1.1",
   "type": "module",
-  "packageManager": "pnpm@10.29.2",
+  "packageManager": "pnpm@10.29.3",
   "author": {
     "name": "Nick Plekhanov",
     "url": "https://plekhanov.me/"
@@ -47,8 +47,8 @@
   "devDependencies": {
     "@nicksp/eslint-config": "^1.5.7",
     "@nicksp/prettier-config": "workspace:*",
-    "@types/node": "^25.2.2",
-    "@typescript/native-preview": "7.0.0-dev.20260208.1",
+    "@types/node": "^25.2.3",
+    "@typescript/native-preview": "7.0.0-dev.20260215.1",
     "bumpp": "^10.4.1",
     "eslint": "^9.39.2",
     "prettier": "^3.8.1"
