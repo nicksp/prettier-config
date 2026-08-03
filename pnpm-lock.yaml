@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@prettier/plugin-oxc':
-        specifier: ^0.2.1
+        specifier: ^0.2.2
         version: 0.2.2
     devDependencies:
       '@nicksp/eslint-config':
@@ -31,7 +31,7 @@ importers:
         specifier: ^9.39.5
         version: 9.39.5(jiti@2.6.1)
       prettier:
-        specifier: ^3.9.5
+        specifier: ^3.9.6
         version: 3.9.6
 
 packages:
