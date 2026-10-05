@@ -31,7 +31,7 @@ importers:
         specifier: ^9.39.5
         version: 9.39.5(jiti@2.6.1)
       prettier:
-        specifier: ^3.9.8
+        specifier: ^3.9.9
         version: 3.9.9
 
 packages:
